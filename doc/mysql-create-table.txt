@@ -1,0 +1,26 @@
+CREATE TABLE ci_table (
+    id_integration int NOT NULL AUTO_INCREMENT,
+    status_integration varchar(255) NOT NULL,
+    error_integration varchar(255),
+    log_integration varchar(255) NOT NULL,
+    user_integration varchar(255) NOT NULL,
+    PRIMARY KEY (id_integration)
+);
+
+---------------------------------------------------------------------
+
+INSERT INTO ci_table (status_integration,error_integration,log_integration,user_integration) VALUES ('0 - waiting',0,'integration:/index.html integration:/about.html','Marcin Krajewski');
+INSERT INTO ci_table (status_integration,error_integration,log_integration,user_integration) VALUES ('1 - in progress',0,'integration:/css/style.css','Marek Semeniuk');
+INSERT INTO ci_table (status_integration,error_integration,log_integration,user_integration) VALUES ('3 - successful',0,'integration:/index.php integration:/php/api.php','Mateusz Belau');
+INSERT INTO ci_table (status_integration,error_integration,log_integration,user_integration) VALUES ('4 - error','404 - the file could not be replaced','integration:/php/connect.php','Zenon Piotrowski');
+INSERT INTO ci_table (status_integration,error_integration,log_integration,user_integration) VALUES ('4 - error','505 - file is empty','integration:/js/var.js','Marcin Krajewski');
+INSERT INTO ci_table (status_integration,error_integration,log_integration,user_integration) VALUES ('4 - error','606 - db_user access denied','db_user:name_hacker','Marek Semeniuk');
+INSERT INTO ci_table (status_integration,error_integration,log_integration,user_integration) VALUES ('4 - error','707 - no url address','url:https://chatbot/db/','Mateusz Belau');
+
+---------------------------------------------------------------------
+
+CREATE TABLE talk_history (
+    id_talk int NOT NULL AUTO_INCREMENT,
+    talk varchar(255) NOT NULL,
+    PRIMARY KEY (id_talk)
+);
