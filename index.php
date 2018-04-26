@@ -99,7 +99,8 @@
 <footer>
 <div class="container-fluid text-center padding">
 		<div class="col-12">
-			<hr class="light-100">
+			<a href="https://github.com/SztifModeL/git_ChatBot_CI_beta_v2.0">GitHub</a>
+			<hr class="light-100">			
 			<h5>&copy; <a href="mailto:mk.codetech@gmail.com">mk.codetech@gmail.com</a></h5>
 		</div>
 	</div>
